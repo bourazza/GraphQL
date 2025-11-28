@@ -177,11 +177,7 @@ async function loginfeatch(username, password) {
   
   if (data.data && data.data.user) {
     console.log("login success");
-    const continer = document.getElementsByClassName('continer')[0];
-    continer.innerHTML = '';
-    continer.className = '';
-    const helpIcon = document.querySelector('.help-icon');
-    if (helpIcon) helpIcon.remove();
+    document.body.innerHTML = '';
     reloadHome();
   }
 }
