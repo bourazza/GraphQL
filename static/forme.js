@@ -2,8 +2,8 @@
 import { reloadHome } from './home.js';
 
 export function reloadforme() {
-    const continer =document.createElement('div')
-    continer.className = 'continer'
+    const logcontiner =document.createElement('div')
+    logcontiner.className = 'logcontiner'
     //  document.getElementsByClassName('continer')[0];
     
     // // Clear container
@@ -83,11 +83,11 @@ export function reloadforme() {
     });
     
     // Append all elements to container
-    continer.appendChild(iconContainer);
-    continer.appendChild(heading);
-    continer.appendChild(subtitle);
-    continer.appendChild(form);
-    document.body.appendChild(continer);
+    logcontiner.appendChild(iconContainer);
+    logcontiner.appendChild(heading);
+    logcontiner.appendChild(subtitle);
+    logcontiner.appendChild(form);
+    document.body.appendChild(logcontiner);
     
     // Create help icon if it doesn't exist
     if (!document.querySelector('.help-icon')) {
@@ -131,34 +131,9 @@ async function loginfeatch(username, password) {
         id
         login
         email
-        totalUp
-        totalDown
-        auditRatio
-        level
-        transactions(where: {type: {_eq: "xp"}}) {
-          amount
-          createdAt
-          path
-        }
-        progresses {
-          grade
-          path
-          createdAt
-          object {
-            name
-            type
-          }
-        }
-        results {
-          grade
-          path
-          createdAt
-          object {
-            name
-            type
-          }
-        }
-      }
+  }
+        
+        
     }
   `;
 
