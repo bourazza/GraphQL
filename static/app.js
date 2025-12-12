@@ -148,7 +148,7 @@ class App {
     populateDashboard(data) {
         // Calculate XP only from projects shown in the list (excluding piscines)
         const projectXP = data.transactions
-            .filter(t => !t.path || (!t.path.includes('piscine-go') && !t.path.includes('piscine-js/')))
+            .filter(t => !t.path || (!t.path.includes('piscine-go') && !t.path.includes('piscine-js/')&& !t.path.includes('piscine-java/')&& !t.path.includes('piscine-rust/')))
             .reduce((sum, t) => sum + t.amount, 0);
         
         // Count completed projects (excluding piscines)
@@ -194,7 +194,7 @@ class App {
     createProjectList(transactions) {
         // Filter out piscines and sort by date (latest first)
         const filteredTransactions = transactions
-            .filter(t => !t.path || (!t.path.includes('piscine-go') && !t.path.includes('piscine-js/')))
+            .filter(t => !t.path || (!t.path.includes('piscine-go') && !t.path.includes('piscine-js/')&& !t.path.includes('piscine-java/')&& !t.path.includes('piscine-rust/')))
             .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
 
         const chartContainer = document.querySelector('.chart-container');
