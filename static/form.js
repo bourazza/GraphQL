@@ -1,5 +1,5 @@
 export function loadForm() {
-    return `
+return  `
         <div class="form-container">
             <div class="form-card">
                 <div class="form-icon">

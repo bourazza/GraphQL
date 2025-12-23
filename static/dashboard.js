@@ -4,7 +4,7 @@ export function loadDashboard() {
             <header class="dashboard-header">
                 <div class="user-info">
                     <div class="user-avatar">
-                        <span>D</span>
+                       <img src="" alt="User Avatar">
                     </div>
                     <div class="user-details">
                         <h3>dupaxor@mailinator.com</h3>
