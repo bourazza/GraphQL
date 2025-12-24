@@ -43,7 +43,7 @@ export function loadDashboard() {
                     <div class="info-item">
                         <span class="info-icon">👤</span>
                         <div>
-                            <strong>Full Name</strong>
+                            <strong>Username</strong>
                             <p>dupaxor@mailinator.com</p>
                         </div>
                     </div>
@@ -64,7 +64,7 @@ export function loadDashboard() {
                 </div>
 
                 <div class="chart-section">
-                    <h3>Statistics & Progress</h3>
+                    <h3>Statistics</h3>
                     <div class="chart-container">
                         <h4>XP Progress Over Time</h4>
                         
@@ -73,20 +73,13 @@ export function loadDashboard() {
             </div>
 
             <div class="chart-section">
-                <h3>Additional Analytics</h3>
+                <h3>Analytics</h3>
                 <div class="chart-container">
                     <h4>Performance Metrics</h4>
                    
                 </div>
             </div>
-            <div class="chart-section">
-                <h3>Additional Analytics</h3>
-                <div class="chart-container">
-                    <h4>Performance Metrics</h4>
-                    <div class="chart-placeholder">
-                    </div>
-                </div>
-            </div>
+            
         </div>
     `;
 }

@@ -27,7 +27,10 @@ export const queries = {
 `,
     
     progress: `{
-        progress(where: {grade: {_gte: 1}, object: {type: {_eq: "project"}}}) {
+        progress(where: {grade: {_gte: 1}, object: {type: {_eq: "project"}}
+ path: { _nlike: "/oujda/piscine-go-oujda%" } 
+}) {
+
             id
             path
         }
