@@ -8,7 +8,6 @@ export function loadDashboard() {
                     </div>
                     <div class="user-details">
                         <h3>dupaxor@mailinator.com</h3>
-                        <span>Level 39</span>
                     </div>
                 </div>
                 <button class="logout-btn">Logout</button>
@@ -52,7 +51,7 @@ export function loadDashboard() {
                         <span class="info-icon">#</span>
                         <div>
                             <strong>Level</strong>
-                            <p>Level 39</p>
+                            <span class="user-level">Level 39</span>
                         </div>
                     </div>
                     <div class="info-item">
@@ -85,7 +84,6 @@ export function loadDashboard() {
                 <div class="chart-container">
                     <h4>Performance Metrics</h4>
                     <div class="chart-placeholder">
-                        <!-- Second chart will be inserted here -->
                     </div>
                 </div>
             </div>
